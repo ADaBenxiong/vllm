@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.1">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.2.0">
   <diagram name="第 1 页" id="_MM_0JAL_mDehR6Rza7M">
-    <mxGraphModel dx="2571" dy="1849" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4011" dy="4754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -25,272 +25,272 @@
         <mxCell id="y4o-Q9D-bzdoxVMksY4T-7" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;utils.py&lt;/font&gt;&lt;div&gt;DeepEPMode类（通信模式选择枚举类）&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="140" y="1280" width="356" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-1" value="deepseek_v2.py&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;DeepseekV2MoE类&lt;/div&gt;&lt;div&gt;使用MoE的话： forward -&amp;gt; forward_deepep方法&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-1" value="deepseek_v2.py&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;DeepseekV2MoE类&lt;/div&gt;&lt;div&gt;使用MoE的话： forward -&amp;gt; forward_deepep方法&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="630" y="1540" width="550" height="370" as="geometry" />
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;eplb/expert_location_dispatch.py（全）&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;ExpertLocationDispatchInfo类（描述了每个专家位于卡号的类）-&amp;gt; 调用get_global_expert_location_metadata方法获取meta数据信息&lt;/div&gt;&lt;div&gt;transform_select_experts_inputs方法（返回用于选择专家的logits）&lt;/div&gt;&lt;div&gt;topk_ids_logical_to_physical方法（用于返回逻辑和物理专家映射关系）&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;eplb/expert_location_dispatch.py（全）&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;ExpertLocationDispatchInfo类（描述了每个专家位于卡号的类）-&amp;gt; 调用get_global_expert_location_metadata方法获取meta数据信息&lt;/div&gt;&lt;div&gt;transform_select_experts_inputs方法（返回用于选择专家的logits）&lt;/div&gt;&lt;div&gt;topk_ids_logical_to_physical方法（用于返回逻辑和物理专家映射关系）&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="340" y="2690" width="465" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;layers/moe/ep_moe/layer.py （全）&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;包含 EPMoE、DeepEPMoE、FlashInferEPMoE 类&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;以及get_moe_impl_class选择哪个类的方法&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;DeepEPMoE类实现forward&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;dispatch -&amp;gt; 调用&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;MaybeTboDeepEPDispatcher类方法&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;moe_impl -&amp;gt; forward_deepgemm_contiguous&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;combine -&amp;gt; 调用&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;MaybeTboDeepEPDispatcher类方法&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;layers/moe/ep_moe/layer.py （全）&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;包含 EPMoE、DeepEPMoE、FlashInferEPMoE 类&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;以及get_moe_impl_class选择哪个类的方法&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;DeepEPMoE类实现forward&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;dispatch -&amp;gt; 调用&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;MaybeTboDeepEPDispatcher类方法&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;moe_impl -&amp;gt; forward_deepgemm_contiguous&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;combine -&amp;gt; 调用&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;MaybeTboDeepEPDispatcher类方法&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-30" y="3253" width="425" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;two_batch_overlap.py&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;MaybeTboDeepEPDispatcher类&lt;/div&gt;&lt;div&gt;管理两个DeepEPDispatcher类&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;two_batch_overlap.py&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;MaybeTboDeepEPDispatcher类&lt;/div&gt;&lt;div&gt;管理两个DeepEPDispatcher类&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="405" y="3070" width="245" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-3" target="-6-FvPc2AzdQoyf2nDTh-4">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-3" target="-6-FvPc2AzdQoyf2nDTh-4" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="420" y="3290" as="sourcePoint" />
             <mxPoint x="470" y="3240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-6" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;5.7 Dispatcher类方法调用&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-5">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-6" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;5.7 Dispatcher类方法调用&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-5" vertex="1" connectable="0">
           <mxGeometry x="0.0544" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-7" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;layers/moe/token_dispatcher/deepep.py（全）&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;_Stage类（EP通信状态枚举类）&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;DeepEPBuffer类（封装deep_ep的Buffer为FP8）&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;_DeepEPDispatcherImpBase&lt;/div&gt;&lt;div&gt;_DeepEPDispatcherImpNormal&lt;/div&gt;&lt;div&gt;_DeepEPDispatcherImpLowLatency&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;_get_buffer：初始化Buffer的对象，分配缓冲区&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;dispatch方法：&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;DeepEPDispatcher对象调用&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;combine方法：&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;DeepEPDispatcher对象调用&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;DeepEPDispatcher类&lt;div&gt;__init__方法：初始化DeepEPDispatcherImpBase类&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;dispatch方法：完成数据分发（数据准备 + 数据通信）&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;combine方法：完成数据合并&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;（数据准备和数据分发 + 等待通信完成和统计）&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;_update_stage 更新EP通信状态&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-7" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;layers/moe/token_dispatcher/deepep.py（全）&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;_Stage类（EP通信状态枚举类）&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;DeepEPBuffer类（封装deep_ep的Buffer为FP8）&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;_DeepEPDispatcherImpBase&lt;/div&gt;&lt;div&gt;_DeepEPDispatcherImpNormal&lt;/div&gt;&lt;div&gt;_DeepEPDispatcherImpLowLatency&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;_get_buffer：初始化Buffer的对象，分配缓冲区&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;dispatch方法：&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;DeepEPDispatcher对象调用&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;combine方法：&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;DeepEPDispatcher对象调用&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;DeepEPDispatcher类&lt;div&gt;__init__方法：初始化DeepEPDispatcherImpBase类&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;dispatch方法：完成数据分发（数据准备 + 数据通信）&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;combine方法：完成数据合并&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;（数据准备和数据分发 + 等待通信完成和统计）&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;_update_stage 更新EP通信状态&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="600" y="3210" width="430" height="270" as="geometry" />
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-4" target="-6-FvPc2AzdQoyf2nDTh-7">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-4" target="-6-FvPc2AzdQoyf2nDTh-7" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="900" y="3590" as="sourcePoint" />
             <mxPoint x="950" y="3540" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-10" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;5.8 调用DeepEPDispatcher类的方法&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-9">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-10" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;5.8 调用DeepEPDispatcher类的方法&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-9" vertex="1" connectable="0">
           <mxGeometry x="0.0209" y="-3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-12" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;deep_ep三方库&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;涉及到Dispatch、Combine的通信等&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-12" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;deep_ep三方库&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;涉及到Dispatch、Combine的通信等&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="827" y="2980" width="230" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-13" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="-6-FvPc2AzdQoyf2nDTh-12">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-13" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" target="-6-FvPc2AzdQoyf2nDTh-12" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="980" y="3220" as="sourcePoint" />
             <mxPoint x="1030" y="3170" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-25" value="5.9 调用deep_ep实现deepep通信" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-13">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-25" value="5.9 调用deep_ep实现deepep通信" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-13" vertex="1" connectable="0">
           <mxGeometry x="-0.147" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-14" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;deepseek_v2.py&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;DeepseekV2MoE类 （Deocder的MoE层）&amp;nbsp;&lt;/div&gt;&lt;div&gt;__init__ -&amp;gt; 初始化gate, topk, experts对象&lt;/div&gt;&lt;div&gt;5.2 forward_deepep方法 -&amp;gt; 计算gate、topk_idx， 调用experts.forward方法&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-14" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;deepseek_v2.py&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;DeepseekV2MoE类 （Deocder的MoE层）&amp;nbsp;&lt;/div&gt;&lt;div&gt;__init__ -&amp;gt; 初始化gate, topk, experts对象&lt;/div&gt;&lt;div&gt;5.2 forward_deepep方法 -&amp;gt; 计算gate、topk_idx， 调用experts.forward方法&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-380" y="2990" width="440" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-14">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-14" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="300" y="3610" as="sourcePoint" />
             <mxPoint x="60" y="3250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-17" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;1.2 experts初始化为DeepEPMoE类对象，&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;调用DeepEPMoE类的方法&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-16">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-17" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;1.2 experts初始化为DeepEPMoE类对象，&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;调用DeepEPMoE类的方法&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-16" vertex="1" connectable="0">
           <mxGeometry x="-0.2" relative="1" as="geometry">
             <mxPoint x="-8" y="-10" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-18" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;layers/moe/topk.py&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;TopK类&lt;/div&gt;&lt;div&gt;forward_cuda方法 -&amp;gt; 调用select_experts -&amp;gt; 调用biased_grouped_topk_gpu -&amp;gt; 调用moe_fused_gate方法/biased_grouped_topk_impl方法 -&amp;gt; 调用&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;topk_ids_logical_to_physical方法&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-18" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;layers/moe/topk.py&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;TopK类&lt;/div&gt;&lt;div&gt;forward_cuda方法 -&amp;gt; 调用select_experts -&amp;gt; 调用biased_grouped_topk_gpu -&amp;gt; 调用moe_fused_gate方法/biased_grouped_topk_impl方法 -&amp;gt; 调用&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;topk_ids_logical_to_physical方法&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="230" y="2910" width="550" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-18" target="-6-FvPc2AzdQoyf2nDTh-2">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-18" target="-6-FvPc2AzdQoyf2nDTh-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="340" y="2770" as="sourcePoint" />
             <mxPoint x="390" y="2720" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-21" value="5.4 调用topk_ids_logical_to_physical方法放回expert卡信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-20">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-21" value="5.4 调用topk_ids_logical_to_physical方法放回expert卡信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-20" vertex="1" connectable="0">
           <mxGeometry x="0.0198" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=-0.003;entryY=0.431;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-14" target="-6-FvPc2AzdQoyf2nDTh-18">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=-0.003;entryY=0.431;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-14" target="-6-FvPc2AzdQoyf2nDTh-18" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="90" y="3070" as="sourcePoint" />
             <mxPoint x="140" y="3020" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-24" value="1.1 topk初始化为TopK类对象" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-23">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-24" value="1.1 topk初始化为TopK类对象" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-23" vertex="1" connectable="0">
           <mxGeometry x="0.0561" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-26" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;eplb/eplb_manager.py&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;EPLBManager类&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;on_forward_pass_end方法 -&amp;gt; _entrypoint -&amp;gt; rebalance 方法&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;rebalance方法 -&amp;gt;&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;(1)get_global_expert_distribution_recorder 获取专家调用次数&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;(2)ExpertLocationMetadata.init_by_eplb 专家位置再分配&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;(3)分块，update_expert_location 分块更新专家位置&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-26" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;eplb/eplb_manager.py&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;EPLBManager类&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;on_forward_pass_end方法 -&amp;gt; _entrypoint -&amp;gt; rebalance 方法&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;rebalance方法 -&amp;gt;&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;(1)get_global_expert_distribution_recorder 获取专家调用次数&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;(2)ExpertLocationMetadata.init_by_eplb 专家位置再分配&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;(3)分块，update_expert_location 分块更新专家位置&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-290" y="2730" width="430" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-28" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;model_executor/model_runner.py&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ModelRunner类&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;initialize方法 -&amp;gt; (1)调用set_global_expert_location_metadata、 compute_initial_expert_location_metadata、(2)set_global_expert_distribution_recoder方法&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;(3) 初始化 eplb_manager对象 - EPLBManager()类&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;(4) 初始化expert_location_updater对象 -&amp;nbsp; ExpertLocationUpdater()类&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;forward方法调用 on_forward_pass_end方法，开始实现eplb&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;update_expert_location方法 -&amp;gt; ExpertLocationUpdater.update方法&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-28" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;model_executor/model_runner.py&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ModelRunner类&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;initialize方法 -&amp;gt; (1)调用set_global_expert_location_metadata、 compute_initial_expert_location_metadata、(2)set_global_expert_distribution_recoder方法&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;(3) 初始化 eplb_manager对象 - EPLBManager()类&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;(4) 初始化expert_location_updater对象 -&amp;nbsp; ExpertLocationUpdater()类&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;forward方法调用 on_forward_pass_end方法，开始实现eplb&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;update_expert_location方法 -&amp;gt; ExpertLocationUpdater.update方法&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-410" y="2440" width="470" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-29" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;eplb/expert_location.py&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ExpertLocationMetadata类（存储专家位置信息类）&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;compute_initial_expert_location_metadata方法 -&amp;gt; 调用init_by_eplb方法实现初始化&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;init_by_eplb方法 -&amp;gt; 调用&amp;nbsp;rebalance_experts 方法确定具体位置信息&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; text-align: center; text-wrap-mode: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;get_global_expert_location_metadata -&amp;gt; 得到location_metadata信息&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; text-align: center; text-wrap-mode: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;set_global_expert_location_metadata&amp;nbsp; -&amp;gt; 设置location_metadata信息&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; text-align: center; text-wrap-mode: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-29" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;eplb/expert_location.py&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ExpertLocationMetadata类（存储专家位置信息类）&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;compute_initial_expert_location_metadata方法 -&amp;gt; 调用init_by_eplb方法实现初始化&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;init_by_eplb方法 -&amp;gt; 调用&amp;nbsp;rebalance_experts 方法确定具体位置信息&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; text-align: center; text-wrap-mode: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;get_global_expert_location_metadata -&amp;gt; 得到location_metadata信息&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; text-align: center; text-wrap-mode: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;set_global_expert_location_metadata&amp;nbsp; -&amp;gt; 设置location_metadata信息&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 11px; text-align: center; text-wrap-mode: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="340" y="2450" width="450" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-30" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-28" target="-6-FvPc2AzdQoyf2nDTh-26">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-30" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-28" target="-6-FvPc2AzdQoyf2nDTh-26" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="22.5" y="2940" as="sourcePoint" />
             <mxPoint x="72.5" y="2890" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-32" value="5. 调用&lt;span style=&quot;font-size: 12px; text-align: left; text-wrap-mode: wrap; background-color: rgb(236, 236, 236);&quot;&gt;on_forward_pass_end&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px; text-align: left; text-wrap-mode: wrap; background-color: rgb(236, 236, 236);&quot;&gt;方法实现专家再分配&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-30">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-32" value="5. 调用&lt;span style=&quot;font-size: 12px; text-align: left; text-wrap-mode: wrap; background-color: rgb(236, 236, 236);&quot;&gt;on_forward_pass_end&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px; text-align: left; text-wrap-mode: wrap; background-color: rgb(236, 236, 236);&quot;&gt;方法实现专家再分配&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-30" vertex="1" connectable="0">
           <mxGeometry x="-0.0361" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.321;entryY=1.019;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-26" target="-6-FvPc2AzdQoyf2nDTh-41">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.321;entryY=1.019;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-26" target="-6-FvPc2AzdQoyf2nDTh-41" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="102.5" y="2760" as="sourcePoint" />
             <mxPoint x="152.5" y="2710" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-53" value="6. 得到专家调用次数信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-31">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-53" value="6. 得到专家调用次数信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-31" vertex="1" connectable="0">
           <mxGeometry x="-0.2043" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.004;entryY=0.548;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-28" target="-6-FvPc2AzdQoyf2nDTh-29">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.004;entryY=0.548;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-28" target="-6-FvPc2AzdQoyf2nDTh-29" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="90" y="2540" as="sourcePoint" />
             <mxPoint x="250" y="2540" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-49" value="1. 初始化专家位置信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-33">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-49" value="1. 初始化专家位置信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-33" vertex="1" connectable="0">
           <mxGeometry x="-0.1189" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-34" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;eplb/eplb_algorithm/deepseek.py&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;rebalance_experts方法 -&amp;gt; 实现专家的平衡&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-34" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;eplb/eplb_algorithm/deepseek.py&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;rebalance_experts方法 -&amp;gt; 实现专家的平衡&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="890" y="2600" width="380" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-29" target="-6-FvPc2AzdQoyf2nDTh-34">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-29" target="-6-FvPc2AzdQoyf2nDTh-34" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="570" y="2940" as="sourcePoint" />
             <mxPoint x="620" y="2890" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-56" value="8.重新初始化专家策略&lt;div&gt;调用&lt;span style=&quot;font-size: 12px; text-wrap-mode: wrap; background-color: rgb(236, 236, 236);&quot;&gt;rebalance_experts&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-35">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-56" value="8.重新初始化专家策略&lt;div&gt;调用&lt;span style=&quot;font-size: 12px; text-wrap-mode: wrap; background-color: rgb(236, 236, 236);&quot;&gt;rebalance_experts&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-35" vertex="1" connectable="0">
           <mxGeometry x="-0.3452" relative="1" as="geometry">
             <mxPoint x="31" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-36" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-2" target="-6-FvPc2AzdQoyf2nDTh-29">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-36" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-2" target="-6-FvPc2AzdQoyf2nDTh-29" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="290" y="3010" as="sourcePoint" />
             <mxPoint x="180" y="2740" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-37" value="5.5 调用get_global_expert_location_metadata函数获取location_metadata信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-36">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-37" value="5.5 调用get_global_expert_location_metadata函数获取location_metadata信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-36" vertex="1" connectable="0">
           <mxGeometry x="0.0196" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-38" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;managers/tp_worker.py&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;TpModelWorker类&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;__init__方法 -&amp;gt; 初始化ModelRunner对象&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;forward_batch_generation方法 -&amp;gt; 初始化forward_batch数据&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-38" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;managers/tp_worker.py&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;TpModelWorker类&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;__init__方法 -&amp;gt; 初始化ModelRunner对象&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;forward_batch_generation方法 -&amp;gt; 初始化forward_batch数据&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-860" y="2200" width="420" height="165" as="geometry" />
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-39" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-38" target="-6-FvPc2AzdQoyf2nDTh-28">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-39" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-38" target="-6-FvPc2AzdQoyf2nDTh-28" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-480" y="2510" as="sourcePoint" />
             <mxPoint x="-420" y="2380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-40" value="3. forward_batch_generation调用&lt;div&gt;model_runner的forward方法、sample方法&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-39">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-40" value="3. forward_batch_generation调用&lt;div&gt;model_runner的forward方法、sample方法&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-39" vertex="1" connectable="0">
           <mxGeometry x="-0.0829" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-41" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;eplb/expert_distribution.py&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;ExpertDistributionRecoder类（分布式情况下专家的分布）&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;_ExpertDistributionRecoderNoop -&amp;gt; 跳过不记录的类&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;_ExpertDistributionRecoderReal类 -&amp;gt; 真实记录的类&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-41" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;eplb/expert_distribution.py&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;ExpertDistributionRecoder类（分布式情况下专家的分布）&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;_ExpertDistributionRecoderNoop -&amp;gt; 跳过不记录的类&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;_ExpertDistributionRecoderReal类 -&amp;gt; 真实记录的类&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="240" y="2200" width="390" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-42" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.79;exitY=-0.033;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-26" target="-6-FvPc2AzdQoyf2nDTh-28">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-42" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.79;exitY=-0.033;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-26" target="-6-FvPc2AzdQoyf2nDTh-28" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-20" y="2730" as="sourcePoint" />
             <mxPoint x="30" y="2680" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-43" value="9. rebalance方法调用&lt;div&gt;update_expert_location方法更新专家信息&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-42">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-43" value="9. rebalance方法调用&lt;div&gt;update_expert_location方法更新专家信息&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-42" vertex="1" connectable="0">
           <mxGeometry x="-0.1366" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-44" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.984;exitY=0.049;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-28" target="-6-FvPc2AzdQoyf2nDTh-41">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-44" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.984;exitY=0.049;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-28" target="-6-FvPc2AzdQoyf2nDTh-41" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="60" y="2490" as="sourcePoint" />
             <mxPoint x="110" y="2440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-50" value="2.初始化分布式系统专家位置信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-44">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-50" value="2.初始化分布式系统专家位置信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-44" vertex="1" connectable="0">
           <mxGeometry x="-0.0767" y="4" relative="1" as="geometry">
             <mxPoint y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-45" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;eplb/expert_location_updater.py&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;ExpertLocationUpdater类&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;update方法 -&amp;gt; _update_expert_weights/&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ExpertLocationMetadata调用update方法&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-45" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;eplb/expert_location_updater.py&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;ExpertLocationUpdater类&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;update方法 -&amp;gt; _update_expert_weights/&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ExpertLocationMetadata调用update方法&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-280" y="2170" width="350" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-47" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-28" target="-6-FvPc2AzdQoyf2nDTh-45">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-47" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-28" target="-6-FvPc2AzdQoyf2nDTh-45" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-330" y="2425" as="sourcePoint" />
             <mxPoint x="-280" y="2375" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-48" value="10. 调用&lt;span style=&quot;font-size: 12px; text-align: left; text-wrap-mode: wrap; background-color: rgb(236, 236, 236);&quot;&gt;ExpertLocationUpdater.update方法实现专家的更新&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-47">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-48" value="10. 调用&lt;span style=&quot;font-size: 12px; text-align: left; text-wrap-mode: wrap; background-color: rgb(236, 236, 236);&quot;&gt;ExpertLocationUpdater.update方法实现专家的更新&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-47" vertex="1" connectable="0">
           <mxGeometry x="0.0653" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-51" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-28" target="-6-FvPc2AzdQoyf2nDTh-41">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-51" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-28" target="-6-FvPc2AzdQoyf2nDTh-41" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="150" y="2590" as="sourcePoint" />
             <mxPoint x="200" y="2540" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-52" value="4.每次forward更新eplb推理次数" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-51">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-52" value="4.每次forward更新eplb推理次数" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-51" vertex="1" connectable="0">
           <mxGeometry x="-0.0231" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-54" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.011;entryY=0.948;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-26" target="-6-FvPc2AzdQoyf2nDTh-29">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-54" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.011;entryY=0.948;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-26" target="-6-FvPc2AzdQoyf2nDTh-29" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="110" y="2790" as="sourcePoint" />
             <mxPoint x="160" y="2740" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-55" value="7. 重新初始化专家位置信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-54">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-55" value="7. 重新初始化专家位置信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-54" vertex="1" connectable="0">
           <mxGeometry x="0.0385" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-57" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.037;entryY=-0.007;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="-6-FvPc2AzdQoyf2nDTh-14">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-57" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.037;entryY=-0.007;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="-6-FvPc2AzdQoyf2nDTh-14" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-357" y="2610" as="sourcePoint" />
             <mxPoint x="-30" y="3160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-58" value="5.1 调用_forward_raw函数&lt;div&gt;最终调用model.forward&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-57">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-58" value="5.1 调用_forward_raw函数&lt;div&gt;最终调用model.forward&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-57" vertex="1" connectable="0">
           <mxGeometry x="0.0937" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-59" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-14" target="-6-FvPc2AzdQoyf2nDTh-18">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-59" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-14" target="-6-FvPc2AzdQoyf2nDTh-18" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="90" y="3110" as="sourcePoint" />
             <mxPoint x="140" y="3060" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-60" value="5.3 调用TopK类forward_cuda方法" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-59">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-60" value="5.3 调用TopK类forward_cuda方法" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-59" vertex="1" connectable="0">
           <mxGeometry x="0.0043" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-61" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.985;exitY=1.007;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-14">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-61" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.985;exitY=1.007;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-14" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="90" y="3200" as="sourcePoint" />
             <mxPoint x="120" y="3250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-62" value="5.6 调用experts的forward方法&lt;div&gt;分为dispatch\moe\combine&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-61">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-62" value="5.6 调用experts的forward方法&lt;div&gt;分为dispatch\moe\combine&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-61" vertex="1" connectable="0">
           <mxGeometry x="-0.187" relative="1" as="geometry">
             <mxPoint x="20" y="19" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-63" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="-6-FvPc2AzdQoyf2nDTh-45" target="-6-FvPc2AzdQoyf2nDTh-29">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-63" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="-6-FvPc2AzdQoyf2nDTh-45" target="-6-FvPc2AzdQoyf2nDTh-29" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="2750" as="sourcePoint" />
             <mxPoint x="440" y="2700" as="targetPoint" />
@@ -300,8 +300,177 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="-6-FvPc2AzdQoyf2nDTh-64" value="11. get_global_expert_location_metadata方法&lt;div&gt;同时调用update方法进行更新 【对所有的数据更新】&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-6-FvPc2AzdQoyf2nDTh-63">
+        <mxCell id="-6-FvPc2AzdQoyf2nDTh-64" value="11. get_global_expert_location_metadata方法&lt;div&gt;同时调用update方法进行更新 【对所有的数据更新】&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-6-FvPc2AzdQoyf2nDTh-63" vertex="1" connectable="0">
           <mxGeometry x="0.0093" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-2" value="TpModelWorker&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;forward_batch_generation方法&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;1. 初始化forward_batch对象，调用&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ForwardBatch.init_new方法&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. 执行model_runner.forward方法进行推理&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-510" y="3850" width="420" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-3" value="TpModelWorkerClient&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. 初始化过程启动forward_thread_func线程，一个while循环，不断从队列取数据，调用TpModelWorker的forward_batch_generation方法推理。&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;2. forward_batch_generation方法 向input_queue塞入数据&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-510" y="3990" width="420" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-4" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;DeepseekV2Model&lt;/span&gt;&lt;/div&gt;&lt;div&gt;1. 未开启tbo， 执行DeepseekV2DecoderLayer&lt;/div&gt;&lt;div&gt;2. 开启tbo，dense层调用DecoderLayer，moe层调用model_forward_maybe_tbo&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;op_comm_prepare_attn方法&lt;/div&gt;&lt;div&gt;op_comm_prepare_mlp方法&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="3725" width="380" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-5" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;two_batch_overlap.py&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;0.&amp;nbsp;TboForwardBatchPreparer类prepare - prepare_raw - filter_batch 【生成tbo数据对象】&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. OperationsStrategy初始化【拆分成attn、mlp、 dispatch、combine等多步】&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. _model_forward_tbo 【数据拆分、 execute_overlapped_operations、数据合并】&lt;/div&gt;&lt;div&gt;3. _model_forward_non_tbo&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="490" y="3712.5" width="470" height="127.5" as="geometry" />
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-6" value="operations.py&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;1. execute_overlapped_operations 按顺序执行forward操作&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="3890" width="380" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-7" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;communicator.py&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;prepare_attn方法 （prefill节点最终执行到_scattered_to_tp_attn_full方法）&lt;/div&gt;&lt;div&gt;_scattered_to_tp_attn_full方法【1. 分配input、output； 2. attn_tp_all_gather_into_tensor】&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="4010" width="485" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-8" value="dp_attention.py &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;get_local_dp_buffer/attn_tp_all_gather_into_tensor&lt;div&gt;parallel_state.py &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;all_gather_into_tensor&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="4150" width="410" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-9" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;model_executor/model_runner.py&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ModelRunner类&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;0. init_torch_distributed方法 - 初始分布式环境和模型&lt;/div&gt;&lt;div&gt;1. forward方法 - _forward_raw - forward_extend - 调用模型forward&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-510" y="3740" width="420" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-10" value="disaggregation/prefill.py&lt;div&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;SchedulerDesegregationPrefillMixin类的&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;1. event_loop_normal_disagg_prefill方法【非overlap场景】&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;2. event_loop_overlap_disagg_prefill 【overlap场景】&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;(1) get_new_batch 方法&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;(2) prepare_mlp_sync_batch方法【设置通信分组组】&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;(3) run_batch 方法【进行推理的流程】&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-510" y="4270" width="420" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-11" value="scheduler.py&lt;div&gt;Scheduler类&lt;/div&gt;&lt;div&gt;1. run_batch方法【调用tp_worker的forward_batch_generation方法进行推理】&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;(1) overlap任务&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;tp_worker =&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;TpModelWorkerClient&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;(2) 非overlap任务&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;tp_worker =&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;TpModelWorker&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-510" y="4130" width="420" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="S6ZstoK-sv5srLf-LXAK-11" target="S6ZstoK-sv5srLf-LXAK-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-250" y="4090" as="sourcePoint" />
+            <mxPoint x="-250" y="4260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-14" value="继承" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="S6ZstoK-sv5srLf-LXAK-13">
+          <mxGeometry x="-0.0372" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="S6ZstoK-sv5srLf-LXAK-11" target="S6ZstoK-sv5srLf-LXAK-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-130" y="3980" as="sourcePoint" />
+            <mxPoint x="-80" y="3930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-16" value="调用" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="S6ZstoK-sv5srLf-LXAK-15">
+          <mxGeometry x="-0.0828" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="S6ZstoK-sv5srLf-LXAK-3" target="S6ZstoK-sv5srLf-LXAK-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-250" y="4090" as="sourcePoint" />
+            <mxPoint x="-200" y="4040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-18" value="调用" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="S6ZstoK-sv5srLf-LXAK-17">
+          <mxGeometry x="-0.1834" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-19" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="S6ZstoK-sv5srLf-LXAK-2" target="S6ZstoK-sv5srLf-LXAK-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-250" y="4090" as="sourcePoint" />
+            <mxPoint x="-200" y="4040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-20" value="调用" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="S6ZstoK-sv5srLf-LXAK-19">
+          <mxGeometry x="-0.0828" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="S6ZstoK-sv5srLf-LXAK-9" target="S6ZstoK-sv5srLf-LXAK-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-150" y="4060" as="sourcePoint" />
+            <mxPoint x="-100" y="4010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-22" value="调用" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="S6ZstoK-sv5srLf-LXAK-21">
+          <mxGeometry x="-0.006" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-23" value="forward_batch_info.py&lt;div&gt;&lt;br&gt;&lt;div&gt;ForwardBatch类&lt;/div&gt;&lt;div&gt;prepare_mlp_sync_batch 方法 【&lt;b&gt;set_dp_buffer_len&lt;/b&gt;设置TP通信的shape】&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-910" y="3790" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="S6ZstoK-sv5srLf-LXAK-9" target="S6ZstoK-sv5srLf-LXAK-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-650" y="4070" as="sourcePoint" />
+            <mxPoint x="-600" y="4020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-28" value="调用&lt;div&gt;prepare_mlp_sync_batch&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="S6ZstoK-sv5srLf-LXAK-24">
+          <mxGeometry x="-0.1915" relative="1" as="geometry">
+            <mxPoint x="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="S6ZstoK-sv5srLf-LXAK-2" target="S6ZstoK-sv5srLf-LXAK-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-650" y="4070" as="sourcePoint" />
+            <mxPoint x="-600" y="4020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-27" value="初始化&lt;div&gt;ForwardBatch&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="S6ZstoK-sv5srLf-LXAK-25">
+          <mxGeometry x="-0.0034" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="S6ZstoK-sv5srLf-LXAK-4" target="S6ZstoK-sv5srLf-LXAK-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="4030" as="sourcePoint" />
+            <mxPoint x="400" y="3980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-30" value="初始化执行流程&lt;div&gt;进行推理&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="S6ZstoK-sv5srLf-LXAK-29">
+          <mxGeometry x="-0.1115" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.009;exitY=0.956;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="S6ZstoK-sv5srLf-LXAK-5" target="S6ZstoK-sv5srLf-LXAK-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="4030" as="sourcePoint" />
+            <mxPoint x="420" y="3980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-32" value="进行推理" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="S6ZstoK-sv5srLf-LXAK-31">
+          <mxGeometry x="0.0029" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.452;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="S6ZstoK-sv5srLf-LXAK-6" target="S6ZstoK-sv5srLf-LXAK-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="4100" as="sourcePoint" />
+            <mxPoint x="210" y="4050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-34" value="进行推理" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="S6ZstoK-sv5srLf-LXAK-33">
+          <mxGeometry x="-0.0966" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-35" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="S6ZstoK-sv5srLf-LXAK-7" target="S6ZstoK-sv5srLf-LXAK-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="4100" as="sourcePoint" />
+            <mxPoint x="210" y="4050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-36" value="进行all_gather通信" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="S6ZstoK-sv5srLf-LXAK-35">
+          <mxGeometry x="-0.02" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-37" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.01;entryY=0.047;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="S6ZstoK-sv5srLf-LXAK-23" target="S6ZstoK-sv5srLf-LXAK-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-840" y="3710" as="sourcePoint" />
+            <mxPoint x="490" y="3680" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-780" y="3690" />
+              <mxPoint x="495" y="3690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S6ZstoK-sv5srLf-LXAK-38" value="生成tbo forwardbatch数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="S6ZstoK-sv5srLf-LXAK-37">
+          <mxGeometry x="-0.2038" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
